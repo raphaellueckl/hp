@@ -9,9 +9,10 @@ import {routerTransition} from '../router.transition';
 })
 export class DonationsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
+
 
 }
