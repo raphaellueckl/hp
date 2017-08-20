@@ -10,7 +10,7 @@
       "assets": [
         "assets",
         "assets/images",
-        "assets/minecraft_map/end",
+        "assets/end",
         "favicon.png"
       ],
       "index": "index.html",
