@@ -11,6 +11,7 @@ import {DonationsComponent} from './dashboard/donations/donations.component';
 import {RouterModule} from '@angular/router';
 import {DashboardRoutingModule} from './dashboard/dashboard-routing.module';
 import { GithubComponent } from './dashboard/github/github.component';
+import { MinecraftComponent } from './dashboard/minecraft/minecraft.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { GithubComponent } from './dashboard/github/github.component';
     DonationsComponent,
     GithubComponent,
     ProjectsComponent,
+    MinecraftComponent,
   ],
   imports: [
     BrowserModule,
