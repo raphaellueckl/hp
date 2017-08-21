@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "homepage"
+    "name": "Welcome to codepleb's"
   },
   "apps": [
     {
@@ -10,7 +10,9 @@
       "assets": [
         "assets",
         "assets/images",
-        "assets/end",
+        "assets/mc_maps ",
+        "assets/mc_maps/overworld",
+        "assets/mc_maps/end",
         "favicon.png"
       ],
       "index": "index.html",
