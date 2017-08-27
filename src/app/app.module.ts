@@ -12,6 +12,7 @@ import {RouterModule} from '@angular/router';
 import {DashboardRoutingModule} from './dashboard/dashboard-routing.module';
 import { GithubComponent } from './dashboard/github/github.component';
 import { MinecraftComponent } from './dashboard/minecraft/minecraft.component';
+import { MarkdownModule } from 'angular2-markdown';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MinecraftComponent } from './dashboard/minecraft/minecraft.component';
     RouterModule,
     DashboardRoutingModule,
     BrowserAnimationsModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
