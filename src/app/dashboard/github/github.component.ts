@@ -28,6 +28,7 @@ export class GithubComponent implements OnInit {
       res => {
         this.gitProjects = res.json() as GithubEntry[];
         this.selectedGitEntry = this.gitProjects[0];
+        this.onSelectEntry(this.selectedGitEntry);
       }
     );
   }
