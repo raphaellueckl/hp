@@ -5,6 +5,13 @@ This is the source of my homepage. :) https://codepleb.net
 Feel free to get ideas, get inspiration or provide me some feedback.
 Find me on telegram: **@codepleb**
 
+## Future ideas
+- Make menu responsive
+- Create a nice layout
+- Find a simple but nice background
+- Fix google maps (only displays locally, does not work embedded)
+- Add some simple games
+
 ## How to setup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
