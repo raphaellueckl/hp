@@ -15,6 +15,7 @@ Find me on telegram: **@codepleb**
 ## How to setup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
+If you run into any problems, use yarn instead of npm. Yarn will give you the guarantee that this app works.
 
 ### Development server
 
