@@ -5,6 +5,10 @@ import {ProjectsComponent} from './projects/projects.component';
 import {DonationsComponent} from './donations/donations.component';
 import {GithubComponent} from './github/github.component';
 import {MinecraftComponent} from './minecraft/minecraft.component';
+import {LoggedInGuard} from '../logged-in.guard';
+import {LoginComponent} from './auth/login/login.component';
+import {MemberComponent} from './auth/member/member.component';
+import {LogoutComponent} from './auth/logout/logout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/overview', pathMatch: 'full' },
@@ -12,7 +16,10 @@ const routes: Routes = [
   { path: 'projects',  component: ProjectsComponent },
   { path: 'github',  component: GithubComponent },
   { path: 'donations',  component: DonationsComponent },
-  { path: 'minecraft',  component: MinecraftComponent}
+  { path: 'minecraft',  component: MinecraftComponent },
+  { path: 'member',  component: MemberComponent, canActivate: [LoggedInGuard] },
+  { path: 'login', component: LoginComponent },
+  { path: 'logout', component: LogoutComponent }
 ];
 
 @NgModule({

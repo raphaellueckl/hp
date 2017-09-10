@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
@@ -13,6 +13,11 @@ import {DashboardRoutingModule} from './dashboard/dashboard-routing.module';
 import { GithubComponent } from './dashboard/github/github.component';
 import { MinecraftComponent } from './dashboard/minecraft/minecraft.component';
 import { MarkdownModule } from 'angular2-markdown';
+import {AUTH_PROVIDERS, AuthService} from './auth.service';
+import {LoggedInGuard} from './logged-in.guard';
+import {LoginComponent} from './dashboard/auth/login/login.component';
+import {MemberComponent} from './dashboard/auth/member/member.component';
+import {LogoutComponent} from './dashboard/auth/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -23,17 +28,25 @@ import { MarkdownModule } from 'angular2-markdown';
     GithubComponent,
     ProjectsComponent,
     MinecraftComponent,
+    LoginComponent,
+    MemberComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     RouterModule,
     DashboardRoutingModule,
     BrowserAnimationsModule,
     MarkdownModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    LoggedInGuard,
+    // AUTH_PROVIDERS,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

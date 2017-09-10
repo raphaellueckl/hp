@@ -13,6 +13,9 @@
     <a [@flyInOut] class="item" routerLink="/github" routerLinkActive="active">GitHub</a>
     <a [@flyInOut] class="item" routerLink="/minecraft" routerLinkActive="active">Minecraft</a>
     <a [@flyInOut] class="item" routerLink="/donations" routerLinkActive="active">Donations</a>
+    <a [@flyInOut] class="item" routerLink="/member" *ngIf="isLoggedIn()" routerLinkActive="active">Member Area</a>
+    <a [@flyInOut] class="item" routerLink="/login" *ngIf="!isLoggedIn()" routerLinkActive="active">Login</a>
+    <a [@flyInOut] class="item" routerLink="/logout" *ngIf="isLoggedIn()" routerLinkActive="active">Logout</a>
   </div>
 
   <div class="ui divider"></div>
