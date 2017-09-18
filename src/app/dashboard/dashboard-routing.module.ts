@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {OverviewComponent} from './overview/overview.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {DonationsComponent} from './donations/donations.component';
 import {GithubComponent} from './github/github.component';
 import {MinecraftComponent} from './minecraft/minecraft.component';
-import {LoggedInGuard} from '../logged-in.guard';
+import {LoggedInGuard} from './auth/logged-in.guard';
 import {LoginComponent} from './auth/login/login.component';
 import {MemberComponent} from './auth/member/member.component';
 import {LogoutComponent} from './auth/logout/logout.component';

@@ -1,13 +1,7 @@
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-  AbstractControl,
-  FormControl
-} from '@angular/forms';
+import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {routerTransition} from '../../router.transition';
-import { Component } from '@angular/core';
-import {AuthService} from '../../../auth.service';
+import {Component} from '@angular/core';
+import {AuthService} from '../auth.service';
 import {LoginDto} from './login-dto';
 import {Location} from '@angular/common';
 

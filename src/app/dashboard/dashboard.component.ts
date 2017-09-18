@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {routerTransition} from './router.transition';
-import {Http} from '@angular/http';
-import {AuthService} from '../auth.service';
+import {AuthService} from './auth/auth.service';
 
 @Component({
   selector: 'app-dashboard',
