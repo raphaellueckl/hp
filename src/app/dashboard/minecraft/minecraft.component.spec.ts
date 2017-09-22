@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MinecraftComponent } from './minecraft.component';
+import {MinecraftComponent} from './minecraft.component';
 
 describe('MinecraftComponent', () => {
   let component: MinecraftComponent;

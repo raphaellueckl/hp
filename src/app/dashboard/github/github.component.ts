@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {routerTransition} from '../router.transition';
 import {Http} from '@angular/http';
 import {GithubEntry} from './github-entry.model';

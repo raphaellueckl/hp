@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { GithubComponent } from './github.component';
+import {GithubComponent} from './github.component';
 
 describe('GithubComponent', () => {
   let component: GithubComponent;
