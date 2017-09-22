@@ -6,11 +6,11 @@ Feel free to get ideas, get inspiration or provide me some feedback.
 Find me on telegram: **@codepleb**
 
 ## Future ideas
-- Make menu responsive
 - Create a nice layout
 - Find a simple but nice background
 - Fix google maps (only displays locally, does not work embedded)
 - Add some simple games
+- ✓ Make menu responsive
 
 ## How to setup
 
