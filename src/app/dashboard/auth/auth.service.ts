@@ -4,7 +4,8 @@ import {Http} from '@angular/http';
 @Injectable()
 export class AuthService {
 
-  constructor(private http: Http) {}
+  constructor(private http: Http) {
+  }
 
   login(user: string, password: string): boolean {
     if (user === 'user' && password === 'password') {
@@ -30,5 +31,5 @@ export class AuthService {
 }
 
 export const AUTH_PROVIDERS: Array<any> = [
-  { provide: AuthService, useClass: AuthService }
+  {provide: AuthService, useClass: AuthService}
 ];

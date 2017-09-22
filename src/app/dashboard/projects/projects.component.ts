@@ -9,7 +9,8 @@ import {routerTransition} from '../router.transition';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

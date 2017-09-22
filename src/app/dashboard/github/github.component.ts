@@ -17,7 +17,8 @@ export class GithubComponent implements OnInit {
   gitProjects: GithubEntry[];
   content: string;
 
-  selectedGitEntry; GithubEntry;
+  selectedGitEntry;
+  GithubEntry;
 
   constructor(private http: Http) {
     this.content = '';

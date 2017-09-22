@@ -25,12 +25,14 @@
              placeholder="Password"
              [formControl]="password">
       <div *ngIf="password.hasError('required') && password.touched"
-           class="ui error message">Password is required</div>
+           class="ui error message">Password is required
+      </div>
     </div>
 
     <button type="submit"
             class="ui button"
-            [class.disabled]="!myForm.valid">Submit</button>
+            [class.disabled]="!myForm.valid">Submit
+    </button>
 
   </form>
 </div>

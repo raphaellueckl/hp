@@ -10,7 +10,8 @@ import {Location} from '@angular/common';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor(private location: Location) { }
+  constructor(private location: Location) {
+  }
 
   ngOnInit() {
   }

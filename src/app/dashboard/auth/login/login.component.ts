@@ -22,15 +22,13 @@ export class LoginComponent {
 
   message: string;
 
-  constructor(
-    public fb: FormBuilder,
-    public authService: AuthService,
-    public location: Location
-  ) {
+  constructor(public fb: FormBuilder,
+              public authService: AuthService,
+              public location: Location) {
     this.message = '';
 
     this.myForm = fb.group({
-      username:  ['', Validators.required],
+      username: ['', Validators.required],
       password: ['', Validators.required]
     });
 
@@ -48,8 +46,9 @@ export class LoginComponent {
   login(username: string, password: string): boolean {
     this.message = '';
     if (!this.authService.login(username, password)) {
-      this.message = 'Incorrect credentials.'; setTimeout(
-        function() {
+      this.message = 'Incorrect credentials.';
+      setTimeout(
+        function () {
           this.message = '';
         }.bind(this), 2500);
     }

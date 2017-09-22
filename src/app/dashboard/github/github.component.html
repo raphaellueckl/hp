@@ -4,7 +4,7 @@
     <div class="four wide column">
       <div class="ui vertical fluid tabular menu">
         <a class="item" *ngFor="let git of gitProjects" (click)="onSelectEntry(git)"
-        [class.active]="git === selectedGitEntry">
+           [class.active]="git === selectedGitEntry">
           {{git.name}}
         </a>
       </div>

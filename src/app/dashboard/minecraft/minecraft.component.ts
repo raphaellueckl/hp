@@ -9,7 +9,8 @@ import {routerTransition} from '../router.transition';
 })
 export class MinecraftComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

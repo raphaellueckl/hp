@@ -11,19 +11,20 @@ import {MemberComponent} from './auth/member/member.component';
 import {LogoutComponent} from './auth/logout/logout.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/overview', pathMatch: 'full' },
-  { path: 'overview',  component: OverviewComponent },
-  { path: 'projects',  component: ProjectsComponent },
-  { path: 'github',  component: GithubComponent },
-  { path: 'donations',  component: DonationsComponent },
-  { path: 'minecraft',  component: MinecraftComponent },
-  { path: 'member',  component: MemberComponent, canActivate: [LoggedInGuard] },
-  { path: 'login', component: LoginComponent },
-  { path: 'logout', component: LogoutComponent }
+  {path: '', redirectTo: '/overview', pathMatch: 'full'},
+  {path: 'overview', component: OverviewComponent},
+  {path: 'projects', component: ProjectsComponent},
+  {path: 'github', component: GithubComponent},
+  {path: 'donations', component: DonationsComponent},
+  {path: 'minecraft', component: MinecraftComponent},
+  {path: 'member', component: MemberComponent, canActivate: [LoggedInGuard]},
+  {path: 'login', component: LoginComponent},
+  {path: 'logout', component: LogoutComponent}
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class DashboardRoutingModule {}
+export class DashboardRoutingModule {
+}

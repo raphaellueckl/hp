@@ -49,4 +49,5 @@ import {LogoutComponent} from './dashboard/auth/logout/logout.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

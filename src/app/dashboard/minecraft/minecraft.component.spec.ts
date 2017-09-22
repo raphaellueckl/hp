@@ -8,9 +8,9 @@ describe('MinecraftComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MinecraftComponent ]
+      declarations: [MinecraftComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
