@@ -1,3 +1,9 @@
+<div class="fourteen wide column middle aligned">
+  <div *ngIf="wrongCredentialsInserted"
+       class="ui error message">Invalid credentials
+  </div>
+</div>
+
 <div class="ui raised segment">
   <form [formGroup]="myForm"
         (ngSubmit)="onSubmit(myForm.value)"
@@ -30,9 +36,10 @@
     </div>
 
     <button type="submit"
-            class="ui button"
-            [class.disabled]="!myForm.valid">Submit
+      class="ui button">Submit
     </button>
 
-  </form>
+    </form>
+
 </div>
+

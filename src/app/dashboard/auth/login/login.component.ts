@@ -20,12 +20,11 @@ export class LoginComponent {
   username: AbstractControl;
   password: AbstractControl;
 
-  message: string;
+  wrongCredentialsInserted: boolean;
 
   constructor(public fb: FormBuilder,
               public authService: AuthService,
               public location: Location) {
-    this.message = '';
 
     this.myForm = fb.group({
       username: ['', Validators.required],
@@ -34,35 +33,21 @@ export class LoginComponent {
 
     this.username = this.myForm.controls[this.USERNAME];
     this.password = this.myForm.controls[this.PASSWORD];
+    this.wrongCredentialsInserted = false;
   }
 
   onSubmit(login: LoginDto): void {
     console.log(`User '${login.username}' attempts to login...`);
-    this.authService.login(login.username, login.password);
-    // this.location.go('/');
-    this.location.back();
-  }
-
-  login(username: string, password: string): boolean {
-    this.message = '';
-    if (!this.authService.login(username, password)) {
-      this.message = 'Incorrect credentials.';
-      setTimeout(
-        function () {
-          this.message = '';
-        }.bind(this), 2500);
+    if (this.authService.login(login.username, login.password)) {
+      this.location.back();
+    } else {
+      this.wrongCredentialsInserted = true;
     }
-    return false;
   }
 
   logout(): boolean {
     this.authService.logout();
     return false;
   }
-}
 
-function skuValidator(control: FormControl): { [s: string]: boolean } {
-  if (!control.value.match(/^123/)) {
-    return {invalidSku: true};
-  }
 }

@@ -6,6 +6,7 @@ Feel free to get ideas, get inspiration or provide me some feedback.
 Find me on telegram: **@codepleb**
 
 ## Future ideas
+- Give control over homeserver-features for admins
 - Create a nice layout
 - Find a simple but nice background
 - Fix google maps (only displays locally, does not work embedded)
