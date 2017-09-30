@@ -17,6 +17,10 @@ export class MusicNotesComponent implements OnInit {
   data: Observable<string>;
   spitRandomChars;
 
+  interval: number = 3000;
+  minInterval: number = 0;
+  maxInterval: number = 5000;
+
   constructor() { }
 
   ngOnInit() {
@@ -27,10 +31,11 @@ export class MusicNotesComponent implements OnInit {
   }
 
   onStart() {
+    clearInterval(this.spitRandomChars);
     this.currentNote = this.randomChar();
     this.spitRandomChars = setInterval(() => {
       this.currentNote = this.randomChar();
-    }, 1000);
+    }, this.interval);
   }
 
   onStop() {

@@ -1,14 +1,28 @@
 <div [@flyInOut]>
 
-  <div class="ui center aligned container large-text">
-    {{currentNote}}
+  <div class="ui center aligned padded grid">
+
+    <div class="four wide column">
+      <button class="ui green button" (click)="onStart()">
+        Start
+      </button>
+      <button class="ui orange button" (click)="onStop()">
+        Stop
+      </button>
+
+      <div id="slidecontainer">
+        <input #ranger type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
+        (click)="onStart()" class="slider">
+        <p>{{interval / 1000}} seconds</p>
+      </div>
+    </div>
+
+    <div class="four wide column">
+      <div class="large-text">
+        {{currentNote}}
+      </div>
+    </div>
+
   </div>
 
-  <button (click)="onStart()">
-    Start
-  </button>
-  <button (click)="onStop()">
-    Stop
-  </button>
-  
 </div>
