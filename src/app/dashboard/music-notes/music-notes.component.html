@@ -3,21 +3,28 @@
   <div class="ui center aligned padded grid">
 
     <div class="four wide column">
-      <button class="ui green button" (click)="onStart()">
-        Start
-      </button>
-      <button class="ui orange button" (click)="onStop()">
-        Stop
-      </button>
+      <div class="ui raised very padded text container segment">
+        <button class="ui green button" (click)="onStart()">
+          Start
+        </button>
+        <button class="ui orange button" (click)="onStop()">
+          Stop
+        </button>
 
-      <div id="slidecontainer">
-        <input #ranger type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
-        (click)="onStart()" class="slider">
-        <p>{{interval / 1000}} seconds</p>
+        <div class="ui divider"></div>
+
+        <div id="slidecontainer">
+          <input #ranger type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
+            (click)="onStart()" class="slider">
+          <div class="ui label">
+            <div class="detail">{{interval / 1000}}</div>
+            seconds
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="four wide column">
+    <div class="twelve left aligned twelve wide column">
       <div class="large-text">
         {{currentNote}}
       </div>
