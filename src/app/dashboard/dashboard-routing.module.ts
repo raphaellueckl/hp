@@ -9,6 +9,7 @@ import {LoggedInGuard} from './auth/logged-in.guard';
 import {LoginComponent} from './auth/login/login.component';
 import {MemberComponent} from './auth/member/member.component';
 import {LogoutComponent} from './auth/logout/logout.component';
+import {MusicNotesComponent} from './music-notes/music-notes.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/overview', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'github', component: GithubComponent},
   {path: 'donations', component: DonationsComponent},
   {path: 'minecraft', component: MinecraftComponent},
+  {path: 'music-notes', component: MusicNotesComponent},
   {path: 'member', component: MemberComponent, canActivate: [LoggedInGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent}

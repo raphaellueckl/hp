@@ -18,6 +18,7 @@ import {LoggedInGuard} from './dashboard/auth/logged-in.guard';
 import {LoginComponent} from './dashboard/auth/login/login.component';
 import {MemberComponent} from './dashboard/auth/member/member.component';
 import {LogoutComponent} from './dashboard/auth/logout/logout.component';
+import {MusicNotesComponent} from './dashboard/music-notes/music-notes.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {LogoutComponent} from './dashboard/auth/logout/logout.component';
     LoginComponent,
     MemberComponent,
     LogoutComponent,
+    MusicNotesComponent,
   ],
   imports: [
     BrowserModule,
