@@ -19,6 +19,7 @@ import {LoginComponent} from './dashboard/auth/login/login.component';
 import {MemberComponent} from './dashboard/auth/member/member.component';
 import {LogoutComponent} from './dashboard/auth/logout/logout.component';
 import {MusicNotesComponent} from './dashboard/music-notes/music-notes.component';
+import { SingleMusicNoteComponent } from './dashboard/music-notes/single-music-note/single-music-note.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {MusicNotesComponent} from './dashboard/music-notes/music-notes.component
     MemberComponent,
     LogoutComponent,
     MusicNotesComponent,
+    SingleMusicNoteComponent,
   ],
   imports: [
     BrowserModule,
