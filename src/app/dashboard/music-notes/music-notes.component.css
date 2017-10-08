@@ -25,6 +25,14 @@
   cursor: pointer;
 }
 
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #21BA45;
+  cursor: pointer;
+}
+
 .slider:hover {
   opacity: 1;
 }
