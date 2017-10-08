@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NoteTuple} from './note-tuple';
+import {Note} from './note';
 
 @Component({
   selector: 'app-single-music-note',
@@ -9,7 +9,7 @@ import {NoteTuple} from './note-tuple';
 export class SingleMusicNoteComponent implements OnInit {
 
   @Input()
-  currentNote: NoteTuple;
+  currentNote: Note;
 
   constructor() {}
 
