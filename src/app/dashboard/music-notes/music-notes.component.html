@@ -3,36 +3,46 @@
   <div class="ui center aligned stackable grid">
 
     <div class="six wide column">
-      <div class="ui raised very padded text container segment">
-        <button class="ui green button" (click)="onStart()">
-          Start
-        </button>
-        <button class="ui orange button" (click)="onStop()">
-          Stop
-        </button>
+      <div class="ui centered cards">
+        <div class="card">
+          <div class="content">
+            <div class="header">
+              Control Board
+            </div>
 
-        <div class="ui divider"></div>
+            <div class="ui divider"></div>
 
-        <div class="ui checkbox">
-          <input tabindex="0" class="hidden" type="checkbox">
+            <div class="ui checkbox">
+              <input tabindex="0" class="hidden" type="checkbox">
+            </div>
+
+            <div class="ui toggle checkbox">
+              <input name="public" type="checkbox" [(ngModel)]="sharpsActivated" (click)="toggleSharps()">
+              <label>Sharps</label>
+            </div>
+
+            <div class="ui divider"></div>
+
+            <div id="slidecontainer">
+              <input type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
+                     (change)="onStart()" class="slider">
+            </div>
+
+            <div class="ui label">
+              Interval: {{interval / 1000}} seconds
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="ui two buttons">
+              <button class="ui green button" (click)="onStart()">
+                Start
+              </button>
+              <button class="ui orange button" (click)="onStop()">
+                Stop
+              </button>
+            </div>
+          </div>
         </div>
-
-        <div class="ui toggle checkbox">
-          <input name="public" type="checkbox" [(ngModel)]="sharpsActivated" (click)="toggleSharps()">
-          <label>Sharps</label>
-        </div>
-
-        <div class="ui divider"></div>
-
-        <div id="slidecontainer">
-          <input type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
-            (change)="onStart()" class="slider">
-        </div>
-
-        <div class="ui label">
-          {{interval / 1000}} seconds
-        </div>
-
       </div>
     </div>
 
@@ -41,5 +51,4 @@
     </div>
 
   </div>
-
 </div>

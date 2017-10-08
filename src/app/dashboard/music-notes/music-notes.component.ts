@@ -59,6 +59,7 @@ export class MusicNotesComponent implements OnInit {
 
   onStart() {
     clearInterval(this.spitRandomChars);
+    this.currentNote = this.randomNote();
     const previousNote = this.currentNote;
 
     this.spitRandomChars = setInterval(() => {
