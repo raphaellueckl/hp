@@ -62,7 +62,6 @@ export class MusicNotesComponent implements OnInit {
     while (this.currentNote === previousNote) {
       this.currentNote = this.randomChar();
     }
-    console.log(this.currentNote)
     this.spitRandomChars = setInterval(() => {
       this.currentNote = this.randomChar();
     }, this.interval);

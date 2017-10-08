@@ -25,15 +25,6 @@
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
 .slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
 }
-

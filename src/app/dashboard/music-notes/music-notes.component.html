@@ -14,8 +14,8 @@
         <div class="ui divider"></div>
 
         <div id="slidecontainer">
-          <input #ranger type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
-            (click)="onStart()" class="slider">
+          <input type="range" min="{{minInterval}}" max="{{maxInterval}}" step="100" [(ngModel)]="interval"
+            (change)="onStart()" class="slider">
         </div>
 
         <div class="ui label">
