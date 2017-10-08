@@ -5,12 +5,14 @@ This is the source of my homepage. :) https://codepleb.net
 Feel free to get ideas, get inspiration or provide me some feedback.
 Find me on telegram: **@codepleb**
 
-## Future ideas
+## Features & Ideas
 - Give control over homeserver-features for admins
 - Create a nice layout
 - Find a simple but nice background
 - Fix google maps (only displays locally, does not work embedded)
 - Add some simple games
+- Fix displaying minecraft map
+- ✓ Learn scales
 - ✓ Make menu responsive
 
 ## How to setup
