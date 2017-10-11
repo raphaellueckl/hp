@@ -42,6 +42,7 @@ export class MusicNotesComponent implements OnInit {
   data: Observable<string>;
   spitRandomChars;
   sharpsActivated = true;
+  lettersActivated = true;
 
   interval: number = 3000;
   minInterval: number = 0;
@@ -77,6 +78,10 @@ export class MusicNotesComponent implements OnInit {
 
   toggleSharps() {
     this.sharpsActivated = !this.sharpsActivated;
+  }
+
+  toggleLetters() {
+    this.lettersActivated = !this.lettersActivated;
   }
 
 }
