@@ -1,6 +1,6 @@
 <div [@flyInOut]>
 
-  <div class="ui center aligned stackable grid">
+  <div class="ui center aligned grid">
 
     <div class="six wide column">
       <div class="ui centered cards">
@@ -12,25 +12,20 @@
 
             <div class="ui divider"></div>
 
-
-            <div class="ui left aligned segments">
-
-              <div class="ui segment">
+            <div class="ui items">
+              <div class="item">
                 <div class="ui toggle checkbox">
                   <input name="public" type="checkbox" [(ngModel)]="sharpsActivated" (click)="toggleSharps()">
                   <label>Sharps</label>
                 </div>
               </div>
-
-              <div class="ui segment">
+              <div class="item">
                 <div class="ui toggle checkbox">
                   <input name="public" type="checkbox" [(ngModel)]="lettersActivated" (click)="toggleLetters()">
                   <label>Show letters</label>
                 </div>
               </div>
-
             </div>
-
 
             <div class="ui divider"></div>
 
