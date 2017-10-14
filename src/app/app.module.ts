@@ -19,8 +19,9 @@ import {LoginComponent} from './dashboard/auth/login/login.component';
 import {MemberComponent} from './dashboard/auth/member/member.component';
 import {LogoutComponent} from './dashboard/auth/logout/logout.component';
 import {MusicNotesComponent} from './dashboard/music-notes/music-notes.component';
-import { SingleMusicNoteComponent } from './dashboard/music-notes/single-music-note/single-music-note.component';
-import { AdvertsComponent } from './dashboard/adverts/adverts.component';
+import {SingleMusicNoteComponent} from './dashboard/music-notes/single-music-note/single-music-note.component';
+import {AdvertsComponent} from './dashboard/adverts/adverts.component';
+
 
 @NgModule({
   declarations: [
