@@ -2,28 +2,45 @@
 
   <br>
 
-  <div class="ui stackable secondary menu">
-    <div class="header item" routerLink="">
-      <img src="favicon.png" alt="">
-      &nbsp;&nbsp;codepleb
+  <div class="container">
+    <div class="main">
+
+      <div class="ui stackable secondary menu">
+        <div class="header item" routerLink="">
+          <img src="favicon.png" alt="">
+          &nbsp;&nbsp;codepleb
+        </div>
+
+        <a [@flyInOut] class="item" routerLink="/overview" routerLinkActive="active">Overview</a>
+        <a [@flyInOut] class="item" routerLink="/projects" routerLinkActive="active">Projects</a>
+        <a [@flyInOut] class="item" routerLink="/github" routerLinkActive="active">GitHub</a>
+        <a [@flyInOut] class="item" routerLink="/minecraft" routerLinkActive="active">Minecraft</a>
+        <a [@flyInOut] class="item" routerLink="/music-notes" routerLinkActive="active">Music Notes</a>
+        <a [@flyInOut] class="item" routerLink="/donations" routerLinkActive="active">Donations</a>
+        <a [@flyInOut] class="item" routerLink="/member" *ngIf="isLoggedIn()" routerLinkActive="active">Member Area</a>
+        <a [@flyInOut] class="item" routerLink="/login" *ngIf="!isLoggedIn()" routerLinkActive="active">Login</a>
+        <a [@flyInOut] class="item" routerLink="/logout" *ngIf="isLoggedIn()" routerLinkActive="active">Logout</a>
+      </div>
+
+      <div class="ui divider"></div>
+      <br>
+
+      <router-outlet></router-outlet>
     </div>
 
-    <a [@flyInOut] class="item" routerLink="/overview" routerLinkActive="active">Overview</a>
-    <a [@flyInOut] class="item" routerLink="/projects" routerLinkActive="active">Projects</a>
-    <a [@flyInOut] class="item" routerLink="/github" routerLinkActive="active">GitHub</a>
-    <a [@flyInOut] class="item" routerLink="/minecraft" routerLinkActive="active">Minecraft</a>
-    <a [@flyInOut] class="item" routerLink="/music-notes" routerLinkActive="active">Music Notes</a>
-    <a [@flyInOut] class="item" routerLink="/donations" routerLinkActive="active">Donations</a>
-    <a [@flyInOut] class="item" routerLink="/member" *ngIf="isLoggedIn()" routerLinkActive="active">Member Area</a>
-    <a [@flyInOut] class="item" routerLink="/login" *ngIf="!isLoggedIn()" routerLinkActive="active">Login</a>
-    <a [@flyInOut] class="item" routerLink="/logout" *ngIf="isLoggedIn()" routerLinkActive="active">Logout</a>
+    <div class="footer">
+      <div class="ui divider"></div>
+
+      <div class="ui center aligned grid">
+        <div class="sixteen wide column">
+          © Made by codepleb | Mail: codepleb4@gmail.com | Telegram: @codepleb
+        </div>
+        <div class="sixteen wide column">
+          <app-adverts></app-adverts>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="ui divider"></div>
-  <br>
-
-  <router-outlet></router-outlet>
-
-  <app-adverts></app-adverts>
 
 </div>
