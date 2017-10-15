@@ -12,7 +12,7 @@ export class AdvertsComponent implements OnInit, AfterViewInit {
   ngOnInit() {
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit() {
     try {
       (window['adsbygoogle'] = window['adsbygoogle'] || []).push({});
     } catch (e) {

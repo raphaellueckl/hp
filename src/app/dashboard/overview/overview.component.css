@@ -1,7 +1,16 @@
-.ng-valid[required], .ng-valid.required {
-  border-left: 5px solid #42A948; /* green */
+.gradient {
+  border-radius: 999em;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  line-height: 0;
 }
 
-.ng-invalid:not(form) {
-  border-left: 5px solid #a94442; /* red */
+img {
+  border-radius: 999em;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(to right, #0084e9 0%, #fff 50%, #0084e9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 ); /* IE6-9 */
 }

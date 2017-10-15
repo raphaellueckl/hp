@@ -12,6 +12,7 @@ Find me on telegram: **@codepleb**
 - Fix google maps (only displays locally, does not work embedded)
 - Add some simple games
 - Fix displaying minecraft map
+- Make github section responsive
 - ✓ Learn scales
 - ✓ Make menu responsive
 
