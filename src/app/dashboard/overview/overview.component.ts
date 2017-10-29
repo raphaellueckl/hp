@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {routerTransition} from '../router.transition';
-import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-overview',
@@ -10,7 +9,7 @@ import {Location} from '@angular/common';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor(private location: Location) {
+  constructor() {
   }
 
   ngOnInit() {

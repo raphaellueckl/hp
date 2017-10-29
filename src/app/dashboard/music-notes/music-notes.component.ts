@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {routerTransition} from '../router.transition';
 import {Observable} from 'rxjs/Observable';
 import {Note} from './single-music-note/note';
@@ -44,9 +44,9 @@ export class MusicNotesComponent implements OnInit {
   sharpsActivated = true;
   lettersActivated = true;
 
-  interval: number = 3000;
-  minInterval: number = 0;
-  maxInterval: number = 5000;
+  interval = 3000;
+  minInterval = 0;
+  maxInterval = 5000;
 
   constructor() {
   }

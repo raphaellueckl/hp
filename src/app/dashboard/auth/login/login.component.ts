@@ -1,4 +1,4 @@
-import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {routerTransition} from '../../router.transition';
 import {Component} from '@angular/core';
 import {AuthService} from '../auth.service';
@@ -13,8 +13,8 @@ import {Location} from '@angular/common';
 })
 export class LoginComponent {
 
-  private readonly USERNAME: string = 'username';
-  private readonly PASSWORD: string = 'password';
+  private readonly USERNAME = 'username';
+  private readonly PASSWORD = 'password';
 
   myForm: FormGroup;
   username: AbstractControl;

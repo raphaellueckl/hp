@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SingleMusicNoteComponent } from './single-music-note.component';
+import {SingleMusicNoteComponent} from './single-music-note.component';
 
 describe('SingleMusicNoteComponent', () => {
   let component: SingleMusicNoteComponent;
