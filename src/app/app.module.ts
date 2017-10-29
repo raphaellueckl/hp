@@ -21,6 +21,7 @@ import {LogoutComponent} from './dashboard/auth/logout/logout.component';
 import {MusicNotesComponent} from './dashboard/music-notes/music-notes.component';
 import {SingleMusicNoteComponent} from './dashboard/music-notes/single-music-note/single-music-note.component';
 import {AdvertsComponent} from './dashboard/adverts/adverts.component';
+import { DonationComponent } from './dashboard/donations/donation/donation.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import {AdvertsComponent} from './dashboard/adverts/adverts.component';
     MusicNotesComponent,
     SingleMusicNoteComponent,
     AdvertsComponent,
+    DonationComponent,
   ],
   imports: [
     BrowserModule,

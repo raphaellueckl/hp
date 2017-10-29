@@ -4,12 +4,14 @@
     <p>If you're here for a donation, feel free to choose from one of the below options. :)</p>
   </div>
 
-  <h2 class="ui header">
+  <div class="ui header">
     <img class="ui image" src="assets/images/donations/paypal_logo.png">
     <div class="content">
-      PayPal
+      <h2>
+        PayPal
+      </h2>
     </div>
-  </h2>
+  </div>
   <div class="ui center aligned basic segment">
     <a href="https://www.paypal.me/codepleb" target="_blank">
       <img src="assets/images/donations/paypal_wallet.png" alt="PayPal donate link: https://www.paypal.me/codepleb">
@@ -17,94 +19,9 @@
   </div>
 
 
-  <div class="ui divider"></div>
-
-
-  <h2 class="ui header">
-    <img class="ui image" src="assets/images/donations/nem_logo.svg">
-    <div class="content">
-      NEM Wallet
-    </div>
-  </h2>
-
-  <div class="ui center aligned basic segment">
-    <strong class="ui header">
-      Address:
-    </strong>
-    <p>NBBE5D-HXFSES-U3IQ4L-TJQ6I7-WP4E22-HBVRE6-ZXFV</p>
-  </div>
-
-  <div class="ui center aligned basic segment">
-    <img src="assets/images/donations/nem_wallet.svg" width="30%" height="30%"
-         alt="NEM Wallet-Address: NBBE5DHXFSESU3IQ4LTJQ6I7WP4E22HBVRE6ZXFV">
-  </div>
-
-  <div class="ui divider"></div>
-
-
-  <h2 class="ui header">
-    <img class="ui image" src="assets/images/donations/iota_logo.svg">
-    <div class="content">
-      IOTA Wallet
-    </div>
-  </h2>
-
-  <div class="ui center aligned basic segment">
-    <strong class="ui header">
-      Address:
-    </strong>
-    <p>IMLENCETOOMOROPMWCTWFDYR9MXNGEEGGJSTUAAMB9V9WMJWGMLRZSFXAKXPVBFROASHPXQCBIBEDFJMBEWRZGZ99X</p>
-  </div>
-
-  <div class="ui center aligned basic segment">
-    <img src="assets/images/donations/iota_wallet.svg" width="30%" height="30%"
-         alt="IOTA Wallet-Address: IMLENCETOOMOROPMWCTWFDYR9MXNGEEGGJSTUAAMB9V9WMJWGMLRZSFXAKXPVBFROASHPXQCBIBEDFJMBEWRZGZ99X">
-  </div>
-
-
-  <div class="ui divider"></div>
-
-
-  <h2 class="ui header">
-    <img class="ui image" src="assets/images/donations/btc_logo.svg">
-    <div class="content">
-      Bitcoin Wallet
-    </div>
-  </h2>
-
-  <div class="ui center aligned basic segment">
-    <strong class="ui header">
-      Address:
-    </strong>
-    <p>32o6kbgZqJ9nhT2aRsfEGcMtpThJ2za89T</p>
-  </div>
-
-  <div class="ui center aligned basic segment">
-    <img src="assets/images/donations/btc_wallet.svg" width="30%" height="30%"
-         alt="BTC Wallet-Address: 32o6kbgZqJ9nhT2aRsfEGcMtpThJ2za89T">
-  </div>
-
-
-  <div class="ui divider"></div>
-
-
-  <h2 class="ui header">
-    <img class="ui image" src="assets/images/donations/ltc_logo.svg">
-    <div class="content">
-      Litecoin Wallet
-    </div>
-  </h2>
-
-  <div class="ui center aligned basic segment">
-    <strong class="ui header">
-      Address:
-    </strong>
-    <p>LgfSNjqVpXFj9xN8ZWPR9qTZQJpcRRNXRZ</p>
-  </div>
-
-  <div class="ui center aligned basic segment">
-    <img src="assets/images/donations/ltc_wallet.svg" width="30%" height="30%"
-         alt="LTC Wallet-Address: LgfSNjqVpXFj9xN8ZWPR9qTZQJpcRRNXRZ">
+  <div *ngFor="let entry of donationSources">
+    <div class="ui divider"></div>
+    <app-donation-entry [donationInfo]="entry"></app-donation-entry>
   </div>
 
 </div>
