@@ -54,10 +54,6 @@ export class MusicNotesComponent implements OnInit {
   ngOnInit() {
   }
 
-  private randomNote(): Note {
-    return this.notes[Math.floor(Math.random() * this.notes.length)];
-  }
-
   onStart() {
     clearInterval(this.spitRandomChars);
     this.currentNote = this.randomNote();
@@ -82,6 +78,10 @@ export class MusicNotesComponent implements OnInit {
 
   toggleLetters() {
     this.lettersActivated = !this.lettersActivated;
+  }
+
+  private randomNote(): Note {
+    return this.notes[Math.floor(Math.random() * this.notes.length)];
   }
 
 }

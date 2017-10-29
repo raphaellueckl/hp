@@ -8,9 +8,9 @@ describe('SingleMusicNoteComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SingleMusicNoteComponent ]
+      declarations: [SingleMusicNoteComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

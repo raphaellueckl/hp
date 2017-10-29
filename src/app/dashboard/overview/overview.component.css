@@ -12,5 +12,5 @@ img {
   height: 100%;
   margin: 0;
   background: linear-gradient(to right, #0084e9 0%, #fff 50%, #0084e9 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1); /* IE6-9 */
 }

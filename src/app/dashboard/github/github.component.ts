@@ -12,12 +12,10 @@ import 'prismjs/themes/prism.css';
 })
 export class GithubComponent implements OnInit {
 
-  private readonly gitUser = 'codepleb';
-
   gitProjects: GithubEntry[];
   content: string;
-
   selectedGitEntry;
+  private readonly gitUser = 'codepleb';
 
   constructor(private http: Http) {
     this.content = '';

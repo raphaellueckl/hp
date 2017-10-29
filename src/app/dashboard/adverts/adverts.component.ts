@@ -7,7 +7,8 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 })
 export class AdvertsComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

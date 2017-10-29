@@ -13,14 +13,12 @@ import {Location} from '@angular/common';
 })
 export class LoginComponent {
 
-  private readonly USERNAME = 'username';
-  private readonly PASSWORD = 'password';
-
   myForm: FormGroup;
   username: AbstractControl;
   password: AbstractControl;
-
   wrongCredentialsInserted: boolean;
+  private readonly USERNAME = 'username';
+  private readonly PASSWORD = 'password';
 
   constructor(public fb: FormBuilder,
               public authService: AuthService,

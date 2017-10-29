@@ -14,7 +14,8 @@ export class SingleMusicNoteComponent implements OnInit {
   @Input()
   showLetters: boolean;
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit() {
   }
