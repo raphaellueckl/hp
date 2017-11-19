@@ -1,0 +1,19 @@
+<div class="ui header">
+  <img class="ui image" src="{{donationInfo.logoPath}}">
+  <div class="content">
+    <h2>
+      {{donationInfo.title}}
+    </h2>
+  </div>
+</div>
+
+<div class="ui center aligned basic segment" *ngIf="donationInfo.walletAddress">
+  <strong class="ui header">
+    Address:
+  </strong>
+  <p>{{donationInfo.walletAddress}}</p>
+</div>
+
+<div class="ui center aligned basic segment">
+  <img src="{{donationInfo.qrCodeSrc}}" width="30%">
+</div>
