@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {routerTransition} from '../router.transition';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {Note} from './single-music-note/note';
 
 @Component({
