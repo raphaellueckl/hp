@@ -23,7 +23,7 @@ export class DonationsComponent implements OnInit {
         'assets/images/donations/iota_logo.svg',
         'assets/images/donations/iota_wallet.svg',
         'IOTA Wallet',
-        'IMLENCETOOMOROPMWCTWFDYR9MXNGEEGGJSTUAAMB9V9WMJWGMLRZSFXAKXPVBFROASHPXQCBIBEDFJMBEWRZGZ99X'),
+        'FPYGNMBXDZNFKUUM9CQNRKBYGAFRIAWCTZDZ9ZOQQPHHECMSPQWCKMDLITRTPHZOOEZPEN9SGKUDAJOSXKDAPGOAJX'),
       new DonationItem(
         'assets/images/donations/btc_logo.svg',
         'assets/images/donations/btc_wallet.svg',
